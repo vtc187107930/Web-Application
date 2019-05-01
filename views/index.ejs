@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Web | Home</title>
+
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link id="switcher" href="css/theme-color.css" rel="stylesheet">
+  <link href="css/slide-in.css" rel="stylesheet" media="all">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <header id="aa-header">
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <div class="aa-logo">
+                <a href="index">
+                  <span class="fa fa-cutlery"></span>
+                  <p>recipe<strong>Web</strong></p>
+                </a>
+              </div>
+              <div class="aa-cartbox">
+                <a class="aa-cart-link" href="<%= locals.index_loghref %>">
+                  <span class="aa-cart-title"><%= locals.index_logtext %></span>
+                </a>
+              </div>
+              <div class="aa-search-box">
+                <form action="/search">
+                  <input type="text" name="search_text" placeholder="Search recipe here">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <div id="sequence" class="seq">
+        <div class="seq-screen">
+          <ul class="seq-canvas">
+            <li>
+              <div class="seq-model">
+                <img data-seq src="img/aa-slider-img-1.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="seq-model">
+                <img data-seq src="img/aa-slider-img-2.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="seq-model">
+                <img data-seq src="img/aa-slider-img-3.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="seq-model">
+                <img data-seq src="img/aa-slider-img-4.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="seq-model">
+                <img data-seq src="img/aa-slider-img-5.jpg" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <fieldset class="seq-nav" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <section id="aa-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-product-area">
+              <div class="aa-product-inner">
+                <ul class="nav nav-tabs aa-products-tab">
+                  <span class="fa fa-thumbs-up"></span><span class="aa-product-recommend">Recommended Recipes</span>
+                </ul>
+                <div class="tab-content">
+                  <ul class="aa-product-catg">
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Bacon & Egg Biscuit Cups"><img
+                            src="img/Bacon & Egg Biscuit Cups.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Bacon & Egg Biscuit Cups">Bacon & Egg Biscuit
+                              Cups</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Banana Chocolate Chip Bread"><img
+                            src="img/Banana Chocolate Chip Bread.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Banana Chocolate Chip Bread">Banana Chocolate
+                              Chip Bread</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Banana Cream Pie"><img
+                            src="img/Banana Cream Pie.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Banana Cream Pie">Banana Cream Pie</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Broccoli Bites"><img src="img/Broccoli Bites.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Broccoli Bites">Broccoli Bites</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Jewel's Watermelon Margaritas"><img
+                            src="img/Jewel's Watermelon Margaritas.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Jewel's Watermelon Margaritas">Jewel's
+                              Watermelon Margaritas</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Judy's Strawberry Pretzel Salad"><img
+                            src="img/Judy's Strawberry Pretzel Salad.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Judy's Strawberry Pretzel Salad">Judy's
+                              Strawberry Pretzel Salad</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Strawberry Angel Food Dessert"><img
+                            src="img/Strawberry Angel Food Dessert.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Strawberry Angel Food Dessert">Strawberry Angel
+                              Food Dessert</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <a class="aa-product-img" href="/recipe=Strawberry Avocado Salad"><img
+                            src="img/Strawberry Avocado Salad.jpg"></a>
+                        <figcaption>
+                          <h4 class="aa-product-title"><a href="/recipe=Strawberry Avocado Salad">Strawberry Avocado
+                              Salad</a></h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="aa-footer">
+    <div class="aa-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-bottom-area">
+              <p>Welcome to My Recipes Application</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/slide-in.js"></script>
+  <script src="js/recipe.js"></script>
+
+</body>
+
+</html>
